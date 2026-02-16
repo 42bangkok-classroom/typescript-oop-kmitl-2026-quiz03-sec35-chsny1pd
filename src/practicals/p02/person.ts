@@ -12,7 +12,7 @@ export class Person {
     }
     setAge(age:number){
         if (age >=0) {
-		this._age = this._age + age
+		this._age = age
     }
 }
 }
