@@ -20,6 +20,6 @@ export class Playstation extends Product {
         return (`${this.name} (Gen ${this.generation})`)
     }
     getDiscountPrice(){
-    this.price = (( 100 - Product.DISCOUNT_PERCENT ) * this.price ) / 100
+      return this.price = (( 100 - Product.DISCOUNT_PERCENT ) * this.price ) / 100
     }
 }
