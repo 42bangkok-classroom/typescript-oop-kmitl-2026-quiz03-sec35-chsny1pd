@@ -2,13 +2,13 @@ import { Product } from './product'
 
 export class Playstation extends Product {
    readonly name : string 
-   gen : number 
+   generation : number 
    protected price : number = 0
   // TODO: implement class properties, constructor with super(...), and methods
-    constructor(name:string,gen:number,price?:number){
+    constructor(name:string,genearation:number,price?:number){
       super(name)
       this.name = name
-      this.gen = gen
+      this.generation = genearation
       if(price){
             this.price = price
         }
@@ -17,9 +17,9 @@ export class Playstation extends Product {
         }
     }
     getProfile(){
-        return (`${this.name} ${this.price}`)
+        return (`${this.name} (Gen ${this.generation})`)
     }
     getDiscountPrice(){
-    this.price = (( 100 - Playstation.DISCOUNT_PERCENT ) * this.price ) / 100
+    this.price = (( 100 - Product.DISCOUNT_PERCENT ) * this.price ) / 100
     }
 }
