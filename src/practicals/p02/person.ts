@@ -1,7 +1,7 @@
 export class Person {
     firstname : string = 'John'
     lastname : string = 'Doe'
-    private _age : number =25 
+    private _age : number = 0
     static COUNTRY : string = 'Thailand'
 
     getFullName(){
@@ -10,9 +10,9 @@ export class Person {
     getAge(){
         return this._age
     }
-    setAge(_age:number){
-        if (_age >=0) {
-		this._age = _age
+    setAge(age:number){
+        if (age >=0) {
+		this._age = this._age + age
     }
 }
 }
