@@ -19,7 +19,7 @@ export class User {
 
     public getLoginAttempts() : number {
         this.LOGIN_ATTEMPTS += 1
-        return this.LOGIN_ATTEMPTS - 1
+        return  this.LOGIN_ATTEMPTS 
     }
 
     private validatePassword(){

@@ -1,1 +1,5 @@
-export interface Drawable {}
+export interface Drawable {
+    // public draw(){
+
+    // }
+}
