@@ -7,9 +7,9 @@ export abstract class Shape implements Drawable {
     this.color = color
   }
 
-  public Shape(color: string , number:number) {
-    return this.Shape
-  }
+//   public Shape(color: string , number:number) {
+//     return this.Shape
+//   }
 
   public getColor(): string {
     return this.color
