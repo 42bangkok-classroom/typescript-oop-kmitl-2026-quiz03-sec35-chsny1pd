@@ -1,5 +1,4 @@
 export interface Drawable {
-    // public draw(){
-
-    // }
+     draw():void
+     getArea():number
 }
