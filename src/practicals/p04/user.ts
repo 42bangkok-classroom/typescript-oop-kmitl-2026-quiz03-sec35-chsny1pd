@@ -10,15 +10,16 @@ export class User {
 
     public login(password:string) : boolean {
         if(this.password == password){
+            this.LOGIN_ATTEMPTS += 1
             return true
         }
         else{
+            this.LOGIN_ATTEMPTS += 1
             return false
         }
     }
 
     public getLoginAttempts() : number {
-        this.LOGIN_ATTEMPTS += 1
         return  this.LOGIN_ATTEMPTS 
     }
 
